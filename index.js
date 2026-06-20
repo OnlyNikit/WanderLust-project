@@ -64,7 +64,7 @@ const {MongoStore} =require("connect-mongo");
 const store =MongoStore.create({
     mongoUrl:db_url,
     crypto:{
-        secret:process.emv.SECRET,
+        secret:process.env.SECRET,
     },    
     touchAfter:24*3600,
 
